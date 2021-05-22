@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'Rubik' ,'Segoe UI';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:darkslategray;
+  color:antiquewhite;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+a{
+  color:bisque;
+}
+
