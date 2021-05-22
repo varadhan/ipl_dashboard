@@ -1,10 +1,5 @@
 import {React, useEffect,useState} from 'react';
-import {useParams} from 'react-router-dom';
-import { MatchDetailCard } from '../components/MatchDetailCard';
-import { MatchSmallCard } from '../components/MatchSmallCard';
 import  './HomePage.scss';
-import { PieChart } from 'react-minimal-pie-chart';
-import {Link} from 'react-router-dom';
 import { TeamTile } from '../components/TeamTiles';
 
 
@@ -15,7 +10,7 @@ const [teams,setTeams] = useState([]);
 useEffect(
 ()=>{
     const fetchTeams = async() =>{
-const response = await fetch(`http://localhost:8080/team`);
+const response = await fetch(`${process.env.REACT_APP_RELATIVE_PATH_URL}/team`);
 const data = await response.json();
 setTeams(data);
     };
@@ -32,7 +27,7 @@ setTeams(data);
           <h1 className="header-text">IPL Dashboard</h1>
           </div>  
       <div className="home-grid">
-{teams.map(team=><TeamTile teamName={team.teamName}/>)}
+{teams.map(team=><TeamTile key={team.id} teamName={team.teamName}/>)}
 
       </div>
       

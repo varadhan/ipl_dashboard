@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ipl.javabrains.ipldashboard.IpldashboardApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.372 s - in ipl.javabrains.ipldashboard.IpldashboardApplicationTests
