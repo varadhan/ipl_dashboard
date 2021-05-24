@@ -6,7 +6,8 @@ import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
+  
+    <div style={{ width: 500, height: 300 }} className="App">
       <Router>
       <Switch>
         <Route path="/teams/:teamName/matches/:year">
@@ -23,6 +24,7 @@ function App() {
         </Router>
 
     </div>
+
   );
 }
 
